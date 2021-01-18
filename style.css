@@ -1,0 +1,78 @@
+body{
+	font-family: 'Open Sans',sans-serif;
+}
+
+#calculator{
+	width: 30%;
+	height: 533px;
+	background-color: white;
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border: 2px solid black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media (max-width: 1024px) { 
+	#calculator { width:60%; }
+	
+}
+
+@media (max-width: 775px) {
+    #calculator { width:95%;}
+	
+}
+
+#result{
+	height: 25%;
+}
+#history{
+	text-align: right;
+	height: 25%;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: #919191;
+}
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+}
+#keyboard{
+	height: 400px;
+}
+.operator, .number, .empty{
+	width: 25%;
+	height: 20%;
+	float: left;
+	border-width: 0;
+	font-size: 25px;
+	border: 1px black solid;
+	color: #1F2020;
+	
+}
+.number,.empty{
+	background-color: white;
+
+}
+.number,.operator{
+	cursor: pointer;
+}
+.operator:active, .number:active{
+	font-size: 30px;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+button:nth-child(4n+4){
+	font-size: 35px;
+	color: white;
+	background-color: #242B2E;
+}
+button:nth-child(20){
+	font-size: 35px;
+	color: white;
+	background-color:orange;
+}
+
